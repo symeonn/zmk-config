@@ -56,11 +56,11 @@
         //│           │ LGUI      │ LEFT_ALT  │ PAGE_UP   │ HOME      │   │ SLCK      │ PSCRN     │PAUSE_BREAK│    RGUI   │  INS      │
             &none       &kp LGUI    &kp LALT    &kp PG_UP   &kp HOME        &kp SLCK    &kp PSCRN &kp PAUSE_BREAK  &kp RGUI  &kp INS
         //├───────────┼───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┤
-        //│ LCTRL     │ LEFT      │ UP        │ RIGHT     │ TAB       │   │ TAB       │ LSHFT     │ K_VOL_UP  │           │  DEL      │
-            &kp LCTRL   &kp LEFT    &kp UP      &kp RIGHT   &kp TAB         &kp TAB     &kp LSHFT  &kp K_VOL_UP    &none     &kp DEL
+        //│ LCTRL     │ LEFT      │ UP        │ RIGHT     │ TAB       │   │ TAB       │ LSHFT     │ C_VOL_UP  │           │  DEL      │
+            &kp LCTRL   &kp LEFT    &kp UP      &kp RIGHT   &kp TAB         &kp TAB     &kp LSHFT  &kp C_VOL_UP    &none     &kp DEL
         //├───────────┼───────────┼───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┼───────────┼───────────┤
-        //│           │           │ DOWN      │ PAGE_DOWN │ END       │   │           │           │ K_VOL_DN  │           │  K_MUTE   │
-            &none       &none       &kp DOWN    &kp PG_DN   &kp END         &none       &none      &kp K_VOL_DN    &none    &kp K_MUTE
+        //│           │           │ DOWN      │ PAGE_DOWN │ END       │   │           │           │ C_VOL_DN  │           │  C_MUTE   │
+            &none       &none       &kp DOWN    &kp PG_DN   &kp END         &none       &none      &kp C_VOL_DN    &none    &kp C_MUTE
         //╰───────────┴───────────┴───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┴───────────┴───────────╯
                                                 &none       &kp SPACE       &kp BSPC    &kp ESC
         //                                    ╰───────────┴───────────╯   ╰───────────┴───────────╯
