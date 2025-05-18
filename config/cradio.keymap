@@ -7,7 +7,7 @@
 
 #define DEFAULT     0
 #define CURSOR      1
-#define FUNC-NUM    2
+#define FUNC_NUM    2
 #define BT          3
 
 / {
@@ -26,7 +26,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <CURSOR FUNC-NUM>;
+            if-layers = <CURSOR FUNC_NUM>;
             then-layer = <BT>;
         };
     };
@@ -45,7 +45,7 @@
         //│ Z         │ X         │ C         │  D        │  V        │   │  K        │  H        │ , and <   │ . and     │ / and ?   │
             &kp Z       &kp X       &kp C        &kp D       &kp V           &kp K       &kp H      &kp COMMA   &kp DOT     &kp FSLH
         //╰───────────┴───────────┴───────────┼───────────┼───────────┤   ├───────────┼───────────┼───────────┴───────────┴───────────╯
-                                         &lt CURSOR ENTER  &mt RALT SPACE    &kp BSPC    &lt FUNC-NUM ESC
+                                         &lt CURSOR ENTER  &mt RALT SPACE    &kp BSPC    &lt FUNC_NUM ESC
         //                                    ╰───────────┴───────────╯   ╰───────────┴───────────╯
             >;
         };
