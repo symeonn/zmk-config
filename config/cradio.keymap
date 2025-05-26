@@ -12,14 +12,15 @@
 
 / {
     behaviors {
-        ht: hold_tap {
+        mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <250>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
+            display-name = "Mod-Tap";
         };
     };
 
@@ -33,6 +34,7 @@
 
     keymap {
         compatible = "zmk,keymap";
+
         default_layer {
             bindings = <
         //╭────────────┬────────────┬────────────┬────────────┬────────────╮   ╭────────────┬────────────┬────────────┬────────────┬────────────╮
@@ -50,7 +52,7 @@
             >;
         };
 
-        right_layer {
+        arrows_media_layer {
             bindings = <
         //╭────────────┬────────────┬────────────┬────────────┬────────────╮   ╭────────────┬────────────┬────────────┬────────────┬────────────╮
         //│            │ LGUI       │ LEFT_ALT   │ PAGE_UP    │ HOME       │   │ SLCK       │ PSCRN      │PAUSE_BREAK │   RGUI     │  INS       │
@@ -67,7 +69,7 @@
             >;
         };
 
-        left_layer {
+        func_num_layer {
             bindings = <
         //╭────────────┬────────────┬────────────┬────────────┬────────────╮   ╭────────────┬────────────┬────────────┬────────────┬────────────╮
         //│ F1         │ F2         │ F3 (LALT)  │ F4         │ [ and {    │   │ ` and ¬    │  7 and &   │  8 and *   │  9 and (   │  - and _   │
@@ -84,7 +86,7 @@
             >;
         };
 
-        tri_layer {
+        sys_layer {
             bindings = <
         //╭────────────┬────────────┬────────────┬────────────┬────────────╮   ╭────────────┬────────────┬────────────┬────────────┬────────────╮
         //│ BT 0       │ BT 1       │ BT 2       │ BT 3       │ BT 4       │   │            │            │            │            │            │
